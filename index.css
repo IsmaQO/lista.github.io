@@ -21,3 +21,10 @@ input[type=number] {
   width: 0px;
 }
 
+@media screen and (max-width: 768px), print {
+  .button.is-fullwidth-mobile {
+  display: flex;
+  width: 100%;
+  }
+  }
+

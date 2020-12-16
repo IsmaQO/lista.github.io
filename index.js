@@ -20,9 +20,9 @@ function add() {
     document.getElementById("nothing").innerHTML = "";
   }
   let elem =
-    '<div class="field-body message-header has-background-white">' +
+    '<div class="field-body">' +
     '<div class="field">' +
-    '<p class="control is-expanded has-icons-left">' +
+    '<p class="control has-icons-left">' +
     '<input class="input" type="text" placeholder="Producto">' +
     '<span class="icon is-small is-left">' +
     '<i class="fas fa-cube"></i>' +
@@ -30,7 +30,7 @@ function add() {
     "</p>" +
     "</div>" +
     '<div class="field">' +
-    '<p class="control is-expanded has-icons-left has-icons-right">' +
+    '<p class="control has-icons-left has-icons-right">' +
     '<input id="ud-0' +
     index +
     '" class="input" type="number" placeholder="Cantidad">' +
@@ -40,7 +40,7 @@ function add() {
     "</p>" +
     "</div>" +
     '<div class="field">' +
-    '<p class="control is-expanded has-icons-left has-icons-right">' +
+    '<p class="control has-icons-left has-icons-right">' +
     '<input id="pre-0' +
     index +
     '" class="input" type="number" placeholder="Precio Unitario">' +
@@ -49,14 +49,19 @@ function add() {
     "</span>" +
     "</p>" +
     "</div>" +
-    '<a class="delete is-large" onclick="del(document.getElementById(\'elem-0' +
+    '<button class="button is-danger is-fullwidth-mobile" onclick="del(document.getElementById(\'elem-0' +
     index +
-    "'));\"></a>" +
+    "'));\">" +
+    '<span class="icon is-small is-left">' +
+    ' <i class="fas fa-trash"></i>' +
+    '</span>' +
+    '<span>Eliminar</span>' +
+    "</button>" +
     "</div>";
   let block_to_insert;
   let container_block;
   block_to_insert = document.createElement("div");
-  block_to_insert.setAttribute("class", "field is-horizontal");
+  block_to_insert.setAttribute("class", "field is-horizontal box");
   block_to_insert.setAttribute("id", "elem-0" + index);
   block_to_insert.innerHTML = elem;
 

@@ -70,7 +70,8 @@
                         <div class="field-body">
                             <div class="field">
                                 <div class="control has-icons-left has-icons-right">
-                                    <input id="presupuesto" class="input" type="number" placeholder="Introduce un límite aquí">
+                                    <input id="presupuesto" class="input" type="number"
+                                        placeholder="Introduce un límite aquí">
                                     <span class="icon is-left">
                                         <i class="fas fa-coins"></i>
                                     </span>
@@ -87,18 +88,18 @@
             <hr>
             <div id="lista" class="block">
                 <p id="nothing" class="subtitle is-5"></p>
-                <div class="field is-horizontal" id="elem-01">
-                    <div class="field-body message-header has-background-white">
+                <div class="field is-horizontal box" id="elem-01">
+                    <div class="field-body">
                         <div class="field">
-                            <p class="control is-expanded has-icons-left">
-                                <input class="input" type="text" placeholder="Producto">
+                            <p class="control has-icons-left">
+                                <input class="input is-flex" type="text" placeholder="Producto">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-cube"></i>
                                 </span>
                             </p>
                         </div>
                         <div class="field">
-                            <p class="control is-expanded has-icons-left has-icons-right">
+                            <p class="control has-icons-left has-icons-right">
                                 <input id="ud-01" class="input" type="number" placeholder="Cantidad">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-cart-plus"></i>
@@ -106,22 +107,27 @@
                             </p>
                         </div>
                         <div class="field">
-                            <p class="control is-expanded has-icons-left has-icons-right">
+                            <p class="control has-icons-left has-icons-right">
                                 <input id="pre-01" class="input" type="number" placeholder="Precio Unitario">
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-euro-sign"></i>
                                 </span>
                             </p>
                         </div>
-                        <button class="delete is-large" onclick="del(document.getElementById('elem-01'));"></button>
+                        <button class="button is-danger is-fullwidth-mobile" onclick="del(document.getElementById('elem-01'));">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-trash"></i>
+                            </span>
+                            <span>Eliminar</span>
+                        </button>
                     </div>
                 </div>
             </div>
-            <a class="button is-rounded is-outlined is-dark" onclick="add();"> <span class="icon is-small is-left">
+            <a class="button is-fullwidth is-success" onclick="add();"> <span class="icon is-small is-left">
                     <i class="fas fa-plus"></i>
                 </span><span>Añadir elemento</span></a>
             <hr>
-            <a class="button is-medium  is-light is-inverted" onclick="calc();"> <span class="icon is-small is-left">
+            <a class="button is-medium  is-info" onclick="calc();"> <span class="icon is-small is-left">
                     <i class="fas fa-calculator"></i>
                 </span><span>Calcular</span></a><br><br>
             <div class="box">
