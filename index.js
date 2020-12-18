@@ -33,7 +33,7 @@ function add() {
     '<p class="control has-icons-left has-icons-right">' +
     '<input id="ud-0' +
     index +
-    '" class="input" type="number" placeholder="Cantidad" pattern="[0-9]*" inputmode="numeric">' +
+    '" class="input" type="text" placeholder="Cantidad" pattern="[0-9]*" inputmode="numeric">' +
     '<span class="icon is-small is-left">' +
     '<i class="fas fa-cart-plus"></i>' +
     "</span>" +
@@ -43,7 +43,7 @@ function add() {
     '<p class="control has-icons-left has-icons-right">' +
     '<input id="pre-0' +
     index +
-    '" class="input" type="number" placeholder="Precio Unitario">' +
+    '" class="input" type="text" placeholder="Precio Unitario" pattern="[0-9]*" inputmode="numeric">' +
     '<span class="icon is-small is-left">' +
     '<i class="fas fa-euro-sign"></i>' +
     "</span>" +
