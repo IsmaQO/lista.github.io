@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lista</title>
     <link rel="icon" href="img/ico.png" sizes="32x32" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="index.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <script src="bgmenu.js"></script>
 </head>
@@ -16,7 +16,7 @@
     <nav class="navbar is-dark is-transparent">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://ismaqo.github.io">
-                <img src="img/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+                <img src="img/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28" />
             </a>
             <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
                 <span></span>
@@ -26,7 +26,6 @@
         </div>
 
         <div id="navbarExampleTransparentExample" class="navbar-menu">
-
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="field is-grouped">
@@ -37,9 +36,7 @@
                                 <span class="icon">
                                     <i class="fab fa-github"></i>
                                 </span>
-                                <span>
-                                    Código
-                                </span>
+                                <span> Código </span>
                             </a>
                         </p>
                         <p class="control">
@@ -58,12 +55,11 @@
     <section class="section has-text-centered">
         <div class="container is-medium">
             <h1 class="title is-1">Lista de la compra</h1>
-            <hr>
+            <hr />
             <div class="columns">
-                <div class="column auto">
-                </div>
+                <div class="column auto"></div>
                 <div class="column is-half">
-                    <div class="field is-horizontal ">
+                    <div class="field is-horizontal">
                         <div class="field-label is-normal">
                             <label class="label">Presupuesto</label>
                         </div>
@@ -71,7 +67,7 @@
                             <div class="field">
                                 <div class="control has-icons-left has-icons-right">
                                     <input id="presupuesto" class="input" type="number"
-                                        placeholder="Introduce un límite aquí">
+                                        placeholder="Introduce un límite aquí" />
                                     <span class="icon is-left">
                                         <i class="fas fa-coins"></i>
                                     </span>
@@ -79,20 +75,20 @@
                             </div>
                         </div>
                     </div>
-                    <p class="help">Si no quieres introducir un límite, déjalo en blanco.</p>
-
+                    <p class="help">
+                        Si no quieres introducir un límite, déjalo en blanco.
+                    </p>
                 </div>
-                <div class="column auto">
-                </div>
+                <div class="column auto"></div>
             </div>
-            <hr>
+            <hr />
             <div id="lista" class="block">
                 <p id="nothing" class="subtitle is-5"></p>
                 <div class="field is-horizontal box" id="elem-01">
                     <div class="field-body">
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input class="input" type="text" placeholder="Producto">
+                                <input class="input" type="text" placeholder="Producto" />
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-cube"></i>
                                 </span>
@@ -100,7 +96,8 @@
                         </div>
                         <div class="field">
                             <p class="control has-icons-left has-icons-right">
-                                <input id="ud-01" class="input" inputmode="decimal" pattern="[0-9]" type="text" placeholder="Cantidad">
+                                <input id="ud-01" class="input" type="number"
+                                    placeholder="Cantidad" />
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-cart-plus"></i>
                                 </span>
@@ -108,13 +105,15 @@
                         </div>
                         <div class="field">
                             <p class="control has-icons-left has-icons-right">
-                                <input id="pre-01" class="input" inputmode="decimal" pattern="[0-9]" type="text" placeholder="Precio Unitario">
+                                <input id="pre-01" class="input" type="number"
+                                    placeholder="Precio Unitario" />
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-euro-sign"></i>
                                 </span>
                             </p>
                         </div>
-                        <button class="button is-danger is-fullwidth-mobile" onclick="del(document.getElementById('elem-01'));">
+                        <button class="button is-danger is-fullwidth-mobile"
+                            onclick="del(document.getElementById('elem-01'));">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-trash"></i>
                             </span>
@@ -123,31 +122,52 @@
                     </div>
                 </div>
             </div>
-            <a class="button is-fullwidth is-success" onclick="add();"> <span class="icon is-small is-left">
-                    <i class="fas fa-plus"></i>
-                </span><span>Añadir elemento</span></a>
-            <hr>
-            <a class="button is-medium  is-info" onclick="calc();"> <span class="icon is-small is-left">
-                    <i class="fas fa-calculator"></i>
-                </span><span>Calcular</span></a><br><br>
+            <a class="button is-fullwidth-mobile is-success" onclick="add();">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-plus"></i> </span><span>Añadir elemento</span></a>
+            <hr />
+            <a class="button is-medium is-info" onclick="calc();">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-calculator"></i></span>
+                <span>Calcular</span>
+            </a>
+
+            <a class="button is-medium is-info is-outlined" onclick="reset();">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-undo"></i></span>
+                <span>Reiniciar</span>
+            </a>
+            <br /><br />
             <div class="box">
                 <h1 class="title is-3">Total:</h1>
-                <hr>
+                <hr />
                 <div class="columns">
                     <div class="column">
                         <p class="subtitle is-3" id="res-elem">0</p>
-                        <p class="subtitle is-4">Productos</p>
+                        <p class="subtitle is-4 has-text-grey">Productos 
+                            <span class="icon is-small">
+                                <i class="fas fa-cubes"> </i>
+                              </span>
+                        </p>
                     </div>
                     <div class="column">
                         <p class="subtitle is-3" id="res-ud">0</p>
-                        <p class="subtitle is-4">Unidades</p>
+                        <p class="subtitle is-4 has-text-grey">Unidades 
+                            <span class="icon is-small">
+                                <i class="fas fa-shopping-cart"> </i>
+                              </span>
+                        </p>
                     </div>
                     <div class="column">
                         <p class="subtitle is-3" id="res-pre">0</p>
-                        <p class="subtitle is-4">Precio total</p>
+                        <p class="subtitle is-4 has-text-grey">Precio total 
+                            <span class="icon is-small">
+                                <i class="fas fa-euro-sign"> </i>
+                              </span>
+                        </p>
                     </div>
                 </div>
-                <br>
+                <br />
                 <p class="subtitle is-5" id="res-presu"></p>
             </div>
         </div>
